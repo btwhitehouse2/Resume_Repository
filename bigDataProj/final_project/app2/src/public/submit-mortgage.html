@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+  <head>
+    <title>Submit Mortgage</title>
+    <link type="text/css" rel="stylesheet" href="/elegant-aero.css" />
+  </head>
+  <!-- Thanks to Mario C. E. Freese <mcefreese@gmail.com> for permission to use background image -->
+  <body style='background-image:URL("cookCounty.jpg");background-repeat:no-repeat;background-position:center top;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size: 100%;'>
+    <p style="margin-bottom:5px"/>
+    <h2 class="elegant-aero" style="margin-left:30%;text-align:center;display:inline-block;color:#5E5E5E;background:#FFFFFF">&nbsp;Submit housing report&nbsp;</h2>
+    <form action="/mortgage.html" style="background:#FFFFFF;width:60%;margin:auto"  method="get" class="elegant-aero">
+      <label> 
+	<span>zipcode:</span> <input type="text" name="Zip Code" value="60002"/>
+      </label>
+      <label style="font-weight:bold;color:#5E5E5E">
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;zipcode <input type="number" name="cook county zip code" value="60002"/>
+          sum_mortgages <input type="number" name="total combined value of all mortgages" value="100000"/>
+          sum_homes <input type="number" name="total number of new mortgages" value="1"/>
+          sum_accident <input type="number" name="total number of deaths by accident" value="0"/>
+          sum_homicide <input type="number" name="total number of deaths from homicide" value="0"/>
+          sum_natural <input type="number" name="total number of deaths by natural cause" value="0"/>
+          sum_suicide <input type="number" name="total number of deaths by suicide" value="0"/>
+          sum_undetermined <input type="number" name="total number of undetermined deaths" value="0"/>
+          sum_deaths <input type="number" name="total number of deaths all causes" value="0"/>
+      </label>
+      <label>
+	<span>&nbsp;</span><input type="submit" value="Submit">
+      </label>
+    </form>
+    <iframe frameBorder="0" name="results_iframe" style="width:100%"/>
+  </body>
+</html>
