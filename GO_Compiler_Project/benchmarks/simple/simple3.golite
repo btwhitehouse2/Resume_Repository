@@ -1,0 +1,9 @@
+func doStuff(){
+    var num int;    
+    var pointetr *abstractClass;
+
+    num = 2;  
+    pointer = new abstractClass;
+
+    printf("world");
+}
