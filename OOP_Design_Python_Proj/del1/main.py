@@ -3,8 +3,8 @@ import courseBuilder as CF
 import logBuilder as LF
 
 def main():
-    #Initiate tables in a Database
-    #I accomplish this using MySQL WorkBench and the commands saved in bldTables.py
+    #Initiate tables in a Database (also deletes older versions)
+    BT.initialize()
     #Next Initiate the data by using User Factory (fulltime student, faculty, administrator)
     #Since User ID is referenced in Course need to initiate this first
     uf = UF.UserFactory
