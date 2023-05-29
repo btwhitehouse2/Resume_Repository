@@ -2,20 +2,18 @@ Final Project Readme
 
 This Readme will cover everything that I have done for the REGIE Final Project
 Database Design:
-I have implemented a 3 table schema using SQL WorkBench the commands that I am using
-are commented out in bldTables.py. The goal is to ensure that I have tables that are clean
-and running before following the rest of these instructions to avoid any duplicate
-entries.
-The unique primary keys of userid and courseid are referenced in the look up table, 'log' 
+I have implemented a 3 table schema using SQL and bldTables.py. The goal is to ensure that I have 
+tables that are clean and running.
 
 Tables:
 user = a table that tracks all users: students, faculty and admin.
 course = a table that tracks all course to include userid for the faculty member who is teaching this course 
 (instantiate this table after user).
-log = a table that tracks all registrations attempts made by a student.
+log = a lookup table that tracks all registrations attempts made by a student.
 'log' has a field called action which is important to ensure that a student
 is either 'registered', 'denied' from a resricted course or 'waiting' for a resricted
 course. log table also tracks courseid and userid for the student.
+(The unique primary keys of userid and courseid are referenced in the look up table, 'log')
 
 Code:
 The main begins with the initiation for factory classes to build data and objects.
